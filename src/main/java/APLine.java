@@ -1,6 +1,7 @@
 public class APLine
 {
    private int a,b,c;
+   
    public APLine(int a1, int b1, int c1){   
       int a = a1;
       int b = b1;
@@ -10,6 +11,10 @@ public class APLine
       return -(double)a/b;
    }
    public boolean isOnLine(int x, int y){
-      return (a*x+b*y+c == 0);
+      if(a*x+b*y+c==0){
+         return true;
+      } else {
+         return false;
+      }
    }
 }
